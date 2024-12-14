@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    video {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Video Player</h1>
+  <video id="myVideo" controls>
+    <source src="2024-12-07_14-40-27_UTC.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+  <button onclick="playVideo()">Play</button>
+  <button onclick="pauseVideo()">Pause</button>
+  <button onclick="restartVideo()">Restart</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
